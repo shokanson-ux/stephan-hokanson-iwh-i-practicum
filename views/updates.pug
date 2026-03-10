@@ -1,0 +1,20 @@
+html
+  head
+    title= title
+  body
+    h1 Add a New Car
+    a(href='/') Return to the homepage
+    form(method='POST' action='/update-cobj')
+      label Name
+      input(type='text' name='name')
+      br
+      label Make
+      input(type='text' name='make')
+      br
+      label Model
+      input(type='text' name='model')
+      br
+      label Year
+      input(type='text' name='year')
+      br
+      button(type='submit') Submit
