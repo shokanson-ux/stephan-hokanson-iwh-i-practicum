@@ -12,7 +12,7 @@ const PRIVATE_APP_ACCESS = process.env.PRIVATE_APP_ACCESS;
 
 // ROUTE 1 - Homepage - GET all cars and display in a table
 app.get('/', async (req, res) => {
-    const url = 'https://api.hubapi.com/crm/v3/objects/2-226547405?properties=name,make,model,year';
+    const url = 'https://api.hubapi.com/crm/v3/objects/2-59327214?properties=name,make,model,year';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ app.post('/update-cobj', async (req, res) => {
             year: req.body.year
         }
     };
-    const url = 'https://api.hubapi.com/crm/v3/objects/2-226547405';
+    const url = 'https://api.hubapi.com/crm/v3/objects/2-59327214';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
